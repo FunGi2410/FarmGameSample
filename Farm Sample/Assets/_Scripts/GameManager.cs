@@ -72,11 +72,11 @@ public class GameManager : MonoBehaviour
         // cập nhật tiền khi khởi động game
         onSell?.Invoke();
         // set up vị trí ban đầu của ô đầu tiên
-        posX = -8f;
-        posY = 4f;
+        posX = -7.5f;
+        posY = 2f;
         disBeetweenFied = 1.5f;
         size = new Vector2(10, 5);
-        posFiedNext = new Vector2(0f, 0f);
+        posFiedNext = new Vector2(0f, 0f); 
 
         // lưu lại các thời gian phát triển của các sản phẩm để tính sau này tính toán
         foreach(CropData cropData in crops)

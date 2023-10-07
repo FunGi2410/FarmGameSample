@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI priceStrawberrySeedTxt;
     public TextMeshProUGUI pricedDairyCowSeedTxt;
     public TextMeshProUGUI pricedLandTxt;
+    public TextMeshProUGUI priceWorkerTxt;
 
     // text số sản phẩm đã thu hoạch
     public TextMeshProUGUI amountTomatoHarvested;
@@ -97,6 +98,7 @@ public class UIManager : MonoBehaviour
     {
         isOpenShop = !isOpenShop;
         pricedLandTxt.text = PRICE_LAND.ToString();
+        priceWorkerTxt.text = GameManager.instance.farmWorkerData.purchasePrice.ToString();
         foreach (CropData cropData in GameManager.instance.crops)
         {
             CropID cropID = cropData.cropID;
