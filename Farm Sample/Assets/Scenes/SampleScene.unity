@@ -8150,7 +8150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b69720cfa065db439cf862f26a90e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 1000
   productsHarvested: []
   totalNumberOfWorkersAvailable: 3
   seeds:
